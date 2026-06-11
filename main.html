@@ -7,7 +7,109 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+<h1>Block vs Inline Element Identification</h1>
+  <p class="subtitle">Each element is rendered twice inside a <code>divblock</code>. Observe how block elements stack while inline elements sit side by side.</p>
+
+  <!-- button -->
+  <div class="element-row">
+    <span class="tag-label">&lt;button&gt;</span>
+    <div class="divblock">
+      <button data-ns-test="block-inline-button">Test1</button>
+      <button data-ns-test="block-inline-button">Test2</button>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- div -->
+  <div class="element-row">
+    <span class="tag-label">&lt;div&gt;</span>
+    <div class="divblock">
+      <div data-ns-test="block-inline-div">Test1</div>
+      <div data-ns-test="block-inline-div">Test2</div>
+    </div>
+    <span class="answer block">Answer: Block</span>
+  </div>
+
+  <!-- span -->
+  <div class="element-row">
+    <span class="tag-label">&lt;span&gt;</span>
+    <div class="divblock">
+      <span data-ns-test="block-inline-span">Test1</span>
+      <span data-ns-test="block-inline-span">Test2</span>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- p -->
+  <div class="element-row">
+    <span class="tag-label">&lt;p&gt;</span>
+    <div class="divblock">
+      <p data-ns-test="block-inline-p">Test1</p>
+      <p data-ns-test="block-inline-p">Test2</p>
+    </div>
+    <span class="answer block">Answer: Block</span>
+  </div>
+
+  <!-- input -->
+  <div class="element-row">
+    <span class="tag-label">&lt;input&gt;</span>
+    <div class="divblock">
+      <input data-ns-test="block-inline-input" value="Test1" readonly />
+      <input data-ns-test="block-inline-input" value="Test2" readonly />
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- cite -->
+  <div class="element-row">
+    <span class="tag-label">&lt;cite&gt;</span>
+    <div class="divblock">
+      <cite data-ns-test="block-inline-cite">Test1</cite>
+      <cite data-ns-test="block-inline-cite">Test2</cite>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- code -->
+  <div class="element-row">
+    <span class="tag-label">&lt;code&gt;</span>
+    <div class="divblock">
+      <code data-ns-test="block-inline-code">Test1</code>
+      <code data-ns-test="block-inline-code">Test2</code>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- h1 -->
+  <div class="element-row">
+    <span class="tag-label">&lt;h1&gt;</span>
+    <div class="divblock">
+      <h1 data-ns-test="block-inline-h1">Test1</h1>
+      <h1 data-ns-test="block-inline-h1">Test2</h1>
+    </div>
+    <span class="answer block">Answer: Block</span>
+  </div>
+
+  <!-- sup -->
+  <div class="element-row">
+    <span class="tag-label">&lt;sup&gt;</span>
+    <div class="divblock">
+      <sup data-ns-test="block-inline-sup">Test1</sup>
+      <sup data-ns-test="block-inline-sup">Test2</sup>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+
+  <!-- sub -->
+  <div class="element-row">
+    <span class="tag-label">&lt;sub&gt;</span>
+    <div class="divblock">
+      <sub data-ns-test="block-inline-sub">Test1</sub>
+      <sub data-ns-test="block-inline-sub">Test2</sub>
+    </div>
+    <span class="answer inline">Answer: Inline</span>
+  </div>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 

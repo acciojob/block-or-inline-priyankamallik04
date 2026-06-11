@@ -1,2 +1,103 @@
 
 /* Your CSS Code here. */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: #1a1a2e;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .element-row {
+      display: grid;
+      grid-template-columns: 80px 1fr auto;
+      align-items: center;
+      gap: 1rem;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    }
+
+    .tag-label {
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      background: #1a1a2e;
+      color: #e2e8f0;
+      border-radius: 6px;
+      padding: 0.3rem 0.6rem;
+      text-align: center;
+    }
+
+    .divblock {
+      border: 1.5px dashed #c9d0e0;
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      background: #f8f9fc;
+      font-size: 0.9rem;
+      min-height: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2px;
+    }
+
+    /* Normalize element appearances */
+    .divblock button,
+    .divblock input {
+      font-size: 0.85rem;
+      padding: 2px 8px;
+      background: #e8eaf2;
+      border: 1px solid #b0b8d0;
+      border-radius: 4px;
+      cursor: default;
+    }
+
+    .divblock input {
+      width: 60px;
+    }
+
+    .divblock code {
+      background: #eef0f7;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .divblock sup, .divblock sub {
+      font-size: 0.7rem;
+    }
+
+    .answer {
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+    }
+
+    .answer.block {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .answer.inline {
+      background: #dcfce7;
+      color: #15803d;
+    }
